@@ -489,4 +489,14 @@ body {
     .tech-body-item>div {
         width: 95% !important;
     }
+
+    .cat-icon, .tech-icon{
+        font-size: 6rem !important;
+    }
+
+    .cat-des, .tech-des{
+        font-size: 1.5rem;
+    }
+
+
 }
