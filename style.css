@@ -233,7 +233,7 @@ body {
 }
 
 .tech-head{
-    margin-top: 150px;
+    margin-top: 50px;
     background: var(--ani-color);
 }
 
@@ -523,6 +523,10 @@ body {
 
     .olg{
         display: none;
+    }
+
+    .why{
+        margin-top: 50px;
     }
 
 }
