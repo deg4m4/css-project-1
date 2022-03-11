@@ -1,13 +1,21 @@
-/* var b = document.body
-var mouse = document.getElementsByClassName("mouse")[0]
+var gmx = document.getElementsByClassName("gmx")
 
-b.onmousemove = (e) => {
-    console.log(e);
-    mouse.style.opacity = 1;
-    mouse.style.top = e.layerY + "px";
-    mouse.style.left = e.layerX + "px";
+for (const b of gmx) {
+    
+    b.addEventListener("mousemove", (e) => {
+
+        var x = e.clientX - b.getBoundingClientRect().x;
+        var y = e.clientY - b.getBoundingClientRect().y;
+
+        b.children[0].style.opacity = 1;
+
+        b.children[0].style.top = y + "px";
+        b.children[0].style.left = x + "px";
+
+    })
+
+    b.addEventListener("mouseout", () => {
+        b.children[0].style.opacity = 0;
+    })
+
 }
-
-b.onmouseout = (e) => {
-    mouse.style.opacity = 0;
-} */
