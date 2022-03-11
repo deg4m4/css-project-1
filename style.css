@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 :root {
@@ -174,16 +175,25 @@ body {
     font-size: 3rem;
 }
 
+.cat-con{
+    transform: translateY(50px);
+}
+
 .cat-con>div {
-    position: initial;
+    position: relative;
     min-height: 200px;
     width: 30%;
     margin-top: 20px;
     background: var(--mainbg);
-    transform: translateY(50px);
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--ani-color);
+    transition: .5s;
+}
+
+.cat-con>div:hover{
+    box-shadow: 0px 0px 25px var(--ani-color);
+    transform: translateY(-5px);
 }
 
 .cat-con>div>.main {
@@ -222,6 +232,213 @@ body {
     margin: auto;
 }
 
+.tech-head{
+    margin-top: 150px;
+    background: var(--ani-color);
+}
+
+.tech-head .tech-heading h1{
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.tech-head .pad-100{
+    height: 80px;
+}
+
+.tech-body{
+    transform: translateY(-120px);
+}
+
+.tech-body-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    margin: auto;
+}
+
+.tech-body-item>div {
+    position: relative;
+    height: same-as-width;
+    width: 23%;
+    margin-top: 20px;
+    background: var(--mainbg);
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+    border: 1px solid var(--ani-color);
+    margin: 10px auto;
+}
+
+.tech-body-item>div:hover{
+    box-shadow: 0px 0px 25px var(--ani-color);
+    transform: translateY(-5px);
+}
+
+.tech-body-item>div>.main {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.068);
+}
+
+.cat-icon{
+    transition: .5s;
+}
+
+.tech-body-item>div>.main>div {
+    position: absolute;
+    z-index: 999999;
+}
+
+.tech-body-item>div>.mouse {
+    z-index: 99;
+    position: absolute;
+    top: -100%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: opacity .3s;
+}
+
+.main-tech-con {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main-tech-con * {
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.tech-icon {
+    font-size: 4rem;
+}
+
+.main-tech-con .tech-des .c-1{
+    position: absolute;
+    width: 100%;
+}
+
+.main-tech-con .tech-des .c-2{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+
+.main-tech-con:hover .tech-des .c-1{
+    opacity: 0;
+}
+
+.main-tech-con:hover .tech-des .c-2{
+    opacity: 1;
+}
+
+
+.tech-body-item>div>.mouse-html{
+    background: radial-gradient(circle, rgb(227, 76, 38, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-html {
+    color: rgb(227, 76, 38);
+}
+
+.tech-body-item>div>.mouse-js{
+    background: radial-gradient(circle, rgb(234, 212, 28, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-js {
+    color: rgb(234, 212, 28);
+}
+
+.tech-body-item>div>.mouse-css{
+    background: radial-gradient(circle, rgb(36, 73, 216, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-css {
+    color: rgb(36, 73, 216);
+}
+
+.tech-body-item>div>.mouse-node{
+    background: radial-gradient(circle, rgb(51, 153, 51, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-node {
+    color: rgb(51, 153, 51);
+}
+
+.tech-body-item>div>.mouse-php{
+    background: radial-gradient(circle, rgb(67, 70, 131, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-php {
+    color: rgb(67, 70, 131);
+}
+
+.tech-body-item>div>.mouse-react{
+    background: radial-gradient(circle, rgb(92, 208, 238, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-react {
+    color: rgb(92, 208, 238);
+}
+
+.tech-body-item>div>.mouse-an{
+    background: radial-gradient(circle, rgb(210, 26, 21, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-an {
+    color: rgb(210, 26, 21);
+}
+
+.tech-body-item>div>.mouse-flutter{
+    background: radial-gradient(circle, rgb(80, 187, 235, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-flutter {
+    color: rgb(80, 187, 235);
+}
+
+.tech-body-item>div>.mouse-jquery{
+    background: radial-gradient(circle, rgb(8, 99, 163, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-jquery {
+    color: rgb(8, 99, 163);
+}
+
+.tech-body-item>div>.mouse-java{
+    background: radial-gradient(circle, rgb(235, 144, 30, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-java {
+    color: rgb(235, 144, 30);
+}
+
+.tech-body-item>div>.mouse-scss{
+    background: radial-gradient(circle, rgb(195, 98, 145, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-scss {
+    color: rgb(195, 98, 145);
+}
+
+.tech-body-item>div>.mouse-bs{
+    background: radial-gradient(circle, rgb(109, 17, 234, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.main-tech-con:hover .tech-icon-bs {
+    color: rgb(109, 17, 234);
+}
+
 /* Mobile Support */
 
 @media screen and (max-width: 700px) {
@@ -231,7 +448,7 @@ body {
     }
 
     .main-warp-body>.con>* {
-        margin: 10px;
+        margin: 0px;
         width: 100% !important;
     }
 
@@ -248,7 +465,7 @@ body {
     }
 
     .cat-con {
-        transform: translateY(-50px);
+        transform: translateY(0);
         width: 100%;
     }
 
@@ -256,7 +473,7 @@ body {
         width: 95%;
     }
 
-    .cat-con>div>.mouse {
+    .mouse {
         display: none;
     }
 
@@ -269,4 +486,7 @@ body {
         margin-right: 0px;
     }    
 
+    .tech-body-item>div {
+        width: 95% !important;
+    }
 }
