@@ -85,7 +85,7 @@ body {
 
 .main-warp-body>.con>* {
     margin: auto 0;
-    width: 45% !important;
+    width: 49% !important;
 }
 
 .home-img img {
@@ -441,10 +441,9 @@ body {
 
 
 .why{
-    margin-top: 150px;
+    margin-top: 110px;
     color: #fff;
 }
-
 
 .why-con{
     display: flex;
@@ -453,9 +452,10 @@ body {
 }
 
 .why-con > *{
+    margin:  auto 0;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 49%;
 }
 
 /* Mobile Support */
