@@ -284,7 +284,7 @@ body {
 .tech-body-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #fff;
     margin: auto;
 }
@@ -299,7 +299,6 @@ body {
     transition: .5s;
     overflow: hidden;
     border: 1px solid var(--ani-color);
-    margin: 10px auto;
 }
 
 .tech-body-item>div:hover {
