@@ -64,6 +64,7 @@ body {
     background: var(--bgx);
     border-bottom: 1px solid var(--ani-color);
     z-index: 999999999;
+    box-shadow: 0px 0px 20px var(--ani-color);
 }
 
 .nav-brand {
