@@ -8,6 +8,10 @@
     scroll-behavior: smooth !important;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root {
     --mainbg: rgb(2, 2, 2);
     --maincolor: rgb(44, 242, 182);
