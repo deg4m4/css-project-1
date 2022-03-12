@@ -2,6 +2,7 @@ var gmx = document.getElementsByClassName("gmx")
 
 for (const b of gmx) {
 
+    if(!b.classList.contains("gmx-no"))
     b.style.height = b.getBoundingClientRect().width + "px";
 
     b.addEventListener("mousemove", (e) => {
