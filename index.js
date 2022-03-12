@@ -23,7 +23,7 @@ for (const b of gmx) {
 }
 
 document.body.onscroll = (e) => {
-    console.log(123);
+    if (!document.body.classList.contains("subpg"))    
     if (document.documentElement.scrollTop > 200) {
         document.body.classList.add("a-body")
     } else {
