@@ -1,3 +1,3 @@
 # css Project 1
 
-by theparthka
+by Parth M. Degama / elparthka
