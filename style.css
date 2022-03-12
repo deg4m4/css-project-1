@@ -726,11 +726,11 @@ body {
     margin-bottom: 0;
 }
 
-.contact-sub-form:hover{
+.contact-sub-form:hover {
     box-shadow: 0px 0px 25px var(--ani-color);
 }
 
-.contact-sub-form:focus{
+.contact-sub-form:focus {
     box-shadow: 0px 0px 25px var(--ani-color);
 }
 
@@ -752,21 +752,21 @@ body {
     transition: opacity .3s;
 }
 
-.contact-body-x{
+.contact-body-x {
     padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contact-body-x > *{
+.contact-body-x>* {
     display: flex;
     margin: auto;
     flex-direction: column;
     width: 49% !important;
 }
 
-.contact-body-x .main-title{
+.contact-body-x .main-title {
     font-size: 2.2rem;
     color: var(--maincolor);
 }
@@ -776,35 +776,35 @@ body {
     flex-direction: column;
 }
 
-.contact-body-x .main-title *{
+.contact-body-x .main-title * {
     margin: auto;
 }
 
-.contact-body-x .main-title .main-sub *{
+.contact-body-x .main-title .main-sub * {
     margin: auto;
 }
 
-.contact-body-x .main-sub{
+.contact-body-x .main-sub {
     color: #fff;
 }
 
-.contact-body-x .main-sub *{
+.contact-body-x .main-sub * {
     z-index: 99999;
     position: relative;
 }
 
-.form-z .input-group{
+.form-z .input-group {
     margin: 10px 0;
 }
 
-.form-z label{
+.form-z label {
     margin: 5px 0 !important;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 300;
 }
 
-.form-z input, .form-z textarea{
+.form-z input, .form-z textarea {
     font-size: 1.4rem;
     outline: none;
     border: none;
@@ -816,13 +816,14 @@ body {
     transition: .5s;
 }
 
-.form-z input:focus, .form-z textarea:focus{
-   background: var(--bgx);
-   border-radius: 5px;
-   border: 2px solid var(--maincolor);
+.form-z input:focus, .form-z textarea:focus {
+    box-shadow: 0px 0px 25px var(--ani-color);
+    background: var(--bgx);
+    border-radius: 5px;
+    border: 2px solid var(--maincolor);
 }
 
-.elbtn{
+.elbtn {
     text-decoration: none;
     font-size: 1.4rem;
     outline: none;
@@ -835,16 +836,22 @@ body {
     transition: .5s;
 }
 
-.elbtn:hover{
+.elbtn:hover {
+    box-shadow: 0px 0px 25px var(--ani-color);
     background: var(--mainbg);
     color: var(--maincolor);
     border-radius: 5px;
 }
 
-.elbtn:active{
+.elbtn:active {
+    box-shadow: 0px 0px 25px var(--ani-color);
     background: var(--bgx);
     border: 2px solid var(--ani-color);
     color: var(--maincolor);
+}
+
+.elbtn:focus{
+    box-shadow: 0px 0px 25px var(--ani-color);
 }
 
 .w-100 {
@@ -859,7 +866,7 @@ body {
     width: 80%;
 }
 
-.m-10{
+.m-10 {
     margin-top: 10px !important;
 }
 
@@ -967,8 +974,8 @@ body {
         width: 100% !important;
     }
 
-    .contact-body-x > *{
+    .contact-body-x>* {
         width: 95% !important;
     }
-    
+
 }
