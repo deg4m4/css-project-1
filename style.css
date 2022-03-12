@@ -649,8 +649,8 @@ body {
 }
 
 .main-warp .box div:nth-child(10) {
-    top: 80%;
-    left: 70%;
+    top: 30%;
+    left: 90%;
     animation: bgani 5s linear infinite;
 }
 
@@ -694,7 +694,7 @@ body {
     text-decoration: none;
     color: #fff;
     width: 23%;
-    padding: 10px;
+    padding: 10px 20px;
     transition: .5s;
     margin: 0 10px;
     border-radius: 50px;
@@ -875,6 +875,158 @@ body {
     margin-top: 10px !important;
 }
 
+.conmini{
+    background: var(--ani-color);
+    margin-bottom: 150px;
+}
+
+.conmini {
+    background: var(--ani-color);
+    height: auto;
+}
+
+.conmini-x {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.conmini-x>div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.conmini-x h1 {
+    font-size: 2.2rem;
+}
+
+.conmini-x h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.conmini-text {
+    width: 40%;
+}
+
+.conmini-text h4 {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.conmini-con {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row !important;
+    transform: translateY(50px);
+}
+
+.main-conmini-con {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main-conmini-con * {
+    margin: 5px 0;
+}
+
+.conmini-con>div {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    margin-top: 20px;
+    background: var(--mainbg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--ani-color);
+    transition: .5s;
+}
+
+.conmini-con>div:hover {
+    box-shadow: 0px 0px 25px var(--ani-color);
+}
+
+.conmini-con>div>.main {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.068);
+}
+
+.conmini-icon {
+    transition: .5s;
+}
+
+.conmini-con>div>.main:hover .conmini-icon {
+    color: var(--maincolor);
+}
+
+.conmini-con>div>.main{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.conmini-con>div>.main>* {
+    margin: auto;
+    z-index: 999999;
+}
+
+.conmini-con>div>.mouse {
+    z-index: 99;
+    position: absolute;
+    top: -100%;
+    width: 300px;
+    height: 300px;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(44, 242, 183, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: opacity .3s;
+}
+
+.conmini-x>.cat-con {
+    margin: auto;
+}
+
+.conmini .contact-info a {
+    padding: 10px 25px;
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    width: 80%;
+    border-radius: 50px;
+    border: 2px solid var(--maincolor);
+    color: #fff;
+    background: var(--bgx);
+}
+
+.conmini .contact-info a:hover {
+    border-radius: 5px;
+    color: var(--bgx);
+    background: var(--maincolor);
+}
+
+.conmini .contact-info a:active {
+    color: #fff;
+    background: var(--ani-color);
+}
+
+.main-title-z{
+    font-size: 2.2rem;
+    color: var(--maincolor);
+}
+
 /* Mobile Support */
 
 @media screen and (max-width: 700px) {
@@ -983,4 +1135,34 @@ body {
         width: 95% !important;
     }
 
+    .conmini-text {
+        width: 100%;
+    }
+
+    .conmini-con {
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    .conmini-con>div {
+        width: 100%;
+    }
+
+    .conmini {
+        padding: 50px 0;
+    }
+
+    .conmini-text h4 {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    .conmini .contact-info a {
+        width: 100%;
+    }
+
+    .conmini-con>div>.main{
+        padding: 25px 0;
+    }
 }
+
