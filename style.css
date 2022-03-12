@@ -838,6 +838,7 @@ body {
 .elbtn:hover{
     background: var(--mainbg);
     color: var(--maincolor);
+    border-radius: 5px;
 }
 
 .elbtn:active{
