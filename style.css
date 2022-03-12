@@ -206,7 +206,6 @@ body {
 
 .cat-con>div {
     position: relative;
-    min-height: 200px;
     width: 30%;
     margin-top: 20px;
     background: var(--mainbg);
@@ -288,7 +287,7 @@ body {
 .tech-body-item>div {
     position: relative;
     height: same-as-width;
-    width: 23%;
+    width: 15%;
     margin-top: 20px;
     background: var(--mainbg);
     border-radius: 10px;
@@ -778,11 +777,11 @@ body {
 }
 
 .contact-body-x .main-title *{
-    margin: auto !important;
+    margin: auto;
 }
 
 .contact-body-x .main-title .main-sub *{
-    margin: auto !important;
+    margin: auto;
 }
 
 .contact-body-x .main-sub{
@@ -795,7 +794,7 @@ body {
 }
 
 .form-z .input-group{
-    margin: 10px 0 !important;
+    margin: 10px 0;
 }
 
 .form-z label{
@@ -805,7 +804,7 @@ body {
     font-weight: 300;
 }
 
-.form-z input, textarea{
+.form-z input, .form-z textarea{
     font-size: 1.4rem;
     outline: none;
     border: none;
@@ -817,9 +816,34 @@ body {
     transition: .5s;
 }
 
-.form-z input:focus, textarea:focus{
+.form-z input:focus, .form-z textarea:focus{
    background: var(--bgx);
    border-radius: 5px;
+   border: 2px solid var(--maincolor);
+}
+
+.elbtn{
+    text-decoration: none;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    border: 2px solid var(--maincolor);
+    background: var(--maincolor);
+    color: var(--bgx);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.elbtn:hover{
+    background: var(--mainbg);
+    color: var(--maincolor);
+}
+
+.elbtn:active{
+    background: var(--bgx);
+    border: 2px solid var(--ani-color);
+    color: var(--maincolor);
 }
 
 .w-100 {
@@ -833,6 +857,11 @@ body {
 .w-80 {
     width: 80%;
 }
+
+.m-10{
+    margin-top: 10px !important;
+}
+
 /* Mobile Support */
 
 @media screen and (max-width: 700px) {
@@ -868,7 +897,7 @@ body {
     }
 
     .cat-con>div {
-        width: 95%;
+        width: 45%;
     }
 
     .mouse {
@@ -885,15 +914,7 @@ body {
     }
 
     .tech-body-item>div {
-        width: 95% !important;
-    }
-
-    .cat-icon, .tech-icon {
-        font-size: 6rem !important;
-    }
-
-    .cat-des, .tech-des {
-        font-size: 1.5rem;
+        width: 45% !important;
     }
 
     .olg {
