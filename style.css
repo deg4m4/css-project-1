@@ -700,6 +700,7 @@ body {
 }
 
 .contact-sub .contact-info a:hover {
+    border-radius: 5px;
     color: var(--bgx);
     background: var(--maincolor);
 }
@@ -743,8 +744,8 @@ body {
     z-index: 99;
     position: absolute;
     top: -100%;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(44, 242, 183, 0.171) 0%, rgba(0, 0, 0, 0) 70%);
     transform: translate(-50%, -50%);
@@ -766,6 +767,72 @@ body {
     width: 49% !important;
 }
 
+.contact-body-x .main-title{
+    font-size: 2.2rem;
+    color: var(--maincolor);
+}
+
+.contact-body-x .main-title .main-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-body-x .main-title *{
+    margin: auto !important;
+}
+
+.contact-body-x .main-title .main-sub *{
+    margin: auto !important;
+}
+
+.contact-body-x .main-sub{
+    color: #fff;
+}
+
+.contact-body-x .main-sub *{
+    z-index: 99999;
+    position: relative;
+}
+
+.form-z .input-group{
+    margin: 10px 0 !important;
+}
+
+.form-z label{
+    margin: 5px 0 !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.form-z input, textarea{
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    border: 2px solid var(--ani-color);
+    background: var(--mainbg);
+    color: #fff;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.form-z input:focus, textarea:focus{
+   background: var(--bgx);
+   border-radius: 5px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
 /* Mobile Support */
 
 @media screen and (max-width: 700px) {
@@ -882,5 +949,4 @@ body {
         width: 95% !important;
     }
     
-
 }
